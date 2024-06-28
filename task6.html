@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/22eef0dda9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="task6.css">
+</head>
+<body>
+    <header>
+        <h1><span>Let's</span> Create a Modal!!!</h1>
+        <p>Click button Below</p>
+    </header>
+    <section>
+        <div class="container">
+            <form action="";>
+                <button id="btn">TEST POPUP</button>
+            </form>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Hello World!!!</h1>
+           <hr>
+            <p>The year is 2027, and the city of Kyoto has undergone tremendous technological advancement. Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and Ruri Ichigyou, a girl with a cold personality who is often blunt with people. Despite sharing Ruri's love of reading, Naomi is afraid to approach her due to her unfriendly nature.</p>
+        </div>
+    </div>
+    <script>
+        const modal = document.querySelector(".modal"),
+        btn = document.getElementById("btn"),
+        close = document.querySelector(".close");
+
+        btn.addEventListener("click", openModal);
+        close.addEventListener("click", closeModal);
+        modal.addEventListener("click", openModal);
+        
+
+        function openModal(e){
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        function closeModal(){
+            modal.style.display = "none";
+        }
+        </script>
+</body>
+</html>
