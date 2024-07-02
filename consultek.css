@@ -94,11 +94,9 @@ header ul .submenu li{
     height: 60px;
     cursor: pointer;
  }
- .content span{
-   padding-left: 30px;
-    }
- .head p{
-    font-size: 20px;
+ 
+ .read p{
+    text-align:center;
  }
 
 .box{
